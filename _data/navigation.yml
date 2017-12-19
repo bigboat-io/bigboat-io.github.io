@@ -1,24 +1,28 @@
 - name: Pricing
-  link: /pricing/
+  #link: /pricing/
+  link: '#'
   new_window: false
   highlight: false
 - name: Blog
-  link: /blog/
+  # link: /blog/
+  link: '#'
   new_window: false
   highlight: false
 - name: About
-  link: /about/
+  # link: /about/
+  link: '#'
   new_window: false
   highlight: false
 - name: Contact
-  link: /contact/
+  # link: /contact/
+  link: '#'
   new_window: false
   highlight: false
 - name: Login
-  link: /
+  link: '#'
   new_window: true
   highlight: false
 - name: Sign Up
-  link: /
+  link: '#'
   new_window: true
   highlight: true
