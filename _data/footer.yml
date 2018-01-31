@@ -1,43 +1,49 @@
 - links:
   - name: Pricing
-    # link: /pricing/
-    link: '#'
-  - name: Blog
-    # link: /blog/
-    link: '#'
-  - name: About
-    # link: /about/
-    link: '#'
+    link: /pricing/
+  # - name: Blog
+  #   ink: /blog/
+  #   link: '#'
+  # - name: About
+  #   link: /about/
+  #   link: '#'
   - name: Contact
-    # link: /contact/
-    link: '#'
+    link: /contact/
+# - links:
+#   - name: Login
+#     link: /
+#     new_window: true
+#   - name: Sign Up
+#     link: /
+#     new_window: true
+#   - name: Docs
+#     link: /
+#     new_window: true
+#   - name: Status
+#     link: /
+#     new_window: true
 - links:
-  - name: Login
-    link: /
+  - name: Github
+    link: https://github.com/bigboat-io
     new_window: true
-  - name: Sign Up
-    link: /
+    social_icon: Github
+  - name: LinkedIn
+    link: https://www.linkedin.com/company/18442304/
     new_window: true
-  - name: Docs
-    link: /
-    new_window: true
-  - name: Status
-    link: /
-    new_window: true
-- links:
-  - name: Facebook
-    link: https://facebook.com
-    new_window: true
-    social_icon: Facebook
-  - name: Twitter
-    link: https://twitter.com
-    social_icon: Twitter
-    new_window: true
-  - name: YouTube
-    link: https://youtube.com
-    social_icon: YouTube
-    new_window: true
-  - name: RSS
-    link: /feed.xml
-    social_icon: RSS
-    new_window: false
+    social_icon: Linkedin
+  # - name: Facebook
+  #   link: https://facebook.com
+  #   new_window: true
+  #   social_icon: Facebook
+  # - name: Twitter
+  #   link: https://twitter.com
+  #   social_icon: Twitter
+  #   new_window: true
+  # - name: YouTube
+  #   link: https://youtube.com
+  #   social_icon: YouTube
+  #   new_window: true
+  # - name: RSS
+  #   link: /feed.xml
+  #   social_icon: RSS
+  #   new_window: false
