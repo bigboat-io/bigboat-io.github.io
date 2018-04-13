@@ -3,24 +3,70 @@ title: Pricing
 heading: We currently offer a simple subscription model
 description: Contact us for more information on our offering.
 pricing_table:
-  - name: Regular
+  - name: Standard
     color: "#4a4a4a"
     features:
       - text: €950,- per month
         highlight: true
-      - text: BigBoat Docker Dashboard
+      - text: HyperDev Dashboard
         highlight: false
-      - text: Compute Cluster<br/> (3x16G memory, 3x4 cores)
+      - text: Compute Cluster<br/> (3x 16GB memory, 4 cores)
         highlight: false
-      - text: 150G Persisted Storage
+      - text: 200GB Persisted Storage
         highlight: false
       - text: Secure VPN
         highlight: false
-      - text: Default Development Environment Setup
+      - text: Development Environment
+        highlight: false
+      - text: CI/CD Environment
+        highlight: false
+      - text: 10 users
         highlight: false
     call_to_action:
       link: /contact/
       text: Contact us
+  - name: Professional
+    color: "#4a4a4a"
+    features:
+      - text: Starting at €1000,- per month
+        highlight: true
+      - text: Everything from the Standard package
+        highlight: false
+      - text: Custom integrations with existing systems
+        highlight: false
+      - text: Consultancy and training
+        highlight: false
+    call_to_action:
+      link: /contact/
+      text: Contact us
+addon_table:
+  - name: 'Extra Cluster Node'
+    color: "#4a4a4a"
+    features:
+      - text: €280,- per month
+        highlight: true
+      - text: 16GB memory, 4 cores
+        highlight: false
+      - text: Extra compute resources for the HyperDev cluster
+        highlight: false
+  - name: Extra Persistent Storage
+    color: "#4a4a4a"
+    features:
+      - text: €55,- per month
+        highlight: true
+      - text: 100GB
+        highlight: false
+      - text: Adds extra storage to the HyperDev cluster
+        highlight: false
+  - name: Extra Jenkins Build Machine
+    color: "#4a4a4a"
+    features:
+    - text: €115,- per month
+      highlight: true
+    - text: 4GB memory, 2 cores
+      highlight: false
+    - text: Dedicated build node for Jenkins
+      highlight: false
 faq:
   - question: What is included in the default development environment setup?
     answer: The setup that we currently rollout instantly includes Gitlab, Jenkins, SonarQube, Docker Registry and an example build pipeline that integegrates these services.
@@ -29,9 +75,9 @@ faq:
   - question: Can I buy additional persisted storage?
     answer: Yes, we offer additional persisted storage starting at €50,- per month.
   - question: Questions?
-    answer: Contact us for any further questions at <a href="mailto:bigboatci@gmail.com?subject=Pricing question">bigboatci@gmail.com</a>.
+    answer: Contact us for any further questions at <a href="mailto:info@hyperdev.io?subject=Pricing question">info@hyperdev.io</a>.
 ---
-<div class="plans" style="max-width: 400px; margin-left:auto; margin-right:auto;">
+<div class="plans" style="max-width: 900px; margin-left:auto; margin-right:auto;">
 	{% for plan in page.pricing_table %}
 		<ul class="plan">
 			<li style="background: {{ plan.color }}">
@@ -41,11 +87,24 @@ faq:
 				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
 			{% endfor %}
 
-			{% if plan.call_to_action %}
+			<!-- {% if plan.call_to_action %}
 				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
-			{% endif %}
+			{% endif %} -->
 		</ul>
 	{% endfor %}
+</div>
+<p class="subtext">HyperDev Addons</p>
+<div class="plans" style="max-width: 900px; margin-left:auto; margin-right:auto;">
+  {% for plan in page.addon_table %}
+  <ul class="plan">
+    <li style="background: {{ plan.color }}">
+      <h3>{{ plan.name }}</h3>
+    </li>
+    {% for feature in plan.features %}
+    <li {% if feature.highlight %} class="highlighted" {% endif %}>{{ feature.text }}</li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
 </div>
 
 {% if page.faq %}

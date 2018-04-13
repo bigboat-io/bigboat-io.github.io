@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: BigBoat
-url: "https://bigboat.cloud"
+title: HyperDev
+url: "https://wwww.hyperdev.io"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -10,7 +10,7 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Ready to go Continuous Delivery Platform
+description: Ready to go Continuous Development Platform
 author:
   name:
   email:

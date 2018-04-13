@@ -24,7 +24,7 @@
 #     new_window: true
 - links:
   - name: Github
-    link: https://github.com/bigboat-io
+    link: https://github.com/hyperdev-io
     new_window: true
     social_icon: Github
   - name: LinkedIn
