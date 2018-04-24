@@ -35,10 +35,10 @@
   #   link: https://facebook.com
   #   new_window: true
   #   social_icon: Facebook
-  # - name: Twitter
-  #   link: https://twitter.com
-  #   social_icon: Twitter
-  #   new_window: true
+  - name: Twitter
+    link: https://twitter.com/hyperdev_io
+    social_icon: Twitter
+    new_window: true
   # - name: YouTube
   #   link: https://youtube.com
   #   social_icon: YouTube
