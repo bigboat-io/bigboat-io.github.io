@@ -1,7 +1,7 @@
 ---
 title: Contact
 heading: Get in touch today
-description: We'd love to help you improve your sales.
+description: We'd love to help you!
 
 map:
   latitude: -45.8787605
@@ -9,10 +9,10 @@ map:
   address: "1 George Street, Dunedin, New Zealand"
   zoom: 13
 ---
-<div class="map" id="map"></div>
+<!-- <div class="map" id="map"></div> -->
 
 
-<div class="contact-box">
+<div class="contact-box" style="padding-top:100px;padding-bottom:100px;">
 	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
 		<input type="hidden" name="_to" value="support@example.com" />
 		<input type="text" name="_gotcha" style="display: none;">
@@ -30,11 +30,13 @@ map:
 	</form>
 
 	<div class="contact-details">
-		<h3 class="editable">Address</h3>
-		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
+		<!-- <h3 class="editable">Contact us</h3> -->
+		<!-- <address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address> -->
 
-		<h3 class="editable">Email</h3>
-		<p><a href="mailto:support@example.com">support@example.com</a></p>
+		<h3 class="editable">Information</h3>
+		<p><a href="mailto:info@hyperdev.io">info@hyperdev.io</a></p>
+		<h3 class="editable">Support</h3>
+		<p><a href="mailto:support@hyperdev.io">support@hyperdev.io</a></p>
 	</div>
 </div>
 

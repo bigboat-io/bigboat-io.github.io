@@ -21,7 +21,6 @@ header {
 	color: #003763;
 	padding: 20px 0;
 	background: white;
-	border-bottom: 1px solid #003763;
 
 	a {
 		color: #003763;
@@ -70,6 +69,18 @@ header {
 
 section {
 	padding: 100px 0;
+}
+section.page {
+	padding: 0 0;
+}
+section.page .heading {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #003763;
+	color: white;
+}
+section.page .heading .subtext {
+	color: white;
 }
 
 section + section {
