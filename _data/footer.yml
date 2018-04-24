@@ -1,6 +1,6 @@
 - links:
-  - name: Pricing
-    link: /pricing/
+  # - name: Pricing
+  #   link: /pricing/
   # - name: Blog
   #   ink: /blog/
   #   link: '#'
