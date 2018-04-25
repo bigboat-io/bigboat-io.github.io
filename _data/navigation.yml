@@ -7,9 +7,12 @@
 #   link: '#'
 #   new_window: false
 #   highlight: false
+- name: Partners
+  link: /partners/
+  new_window: false
+  highlight: false
 # - name: About
-#   # link: /about/
-#   link: '#'
+#   link: /about/
 #   new_window: false
 #   highlight: false
 - name: Contact

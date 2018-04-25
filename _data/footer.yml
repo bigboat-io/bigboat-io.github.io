@@ -7,6 +7,8 @@
   # - name: About
   #   link: /about/
   #   link: '#'
+  - name: Partners
+    link: /partners/
   - name: Contact
     link: /contact/
 # - links:

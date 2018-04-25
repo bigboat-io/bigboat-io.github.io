@@ -66,6 +66,11 @@ defaults:
       path: "contact.html"
     values:
       full_width: true
+  -
+    scope:
+      path: "partners.html"
+    values:
+      full_width: true
 
 jekyll-archives:
   enabled:
