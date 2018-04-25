@@ -4,9 +4,8 @@
   # - name: Blog
   #   ink: /blog/
   #   link: '#'
-  # - name: About
-  #   link: /about/
-  #   link: '#'
+  - name: About
+    link: /about/
   - name: Partners
     link: /partners/
   - name: Contact

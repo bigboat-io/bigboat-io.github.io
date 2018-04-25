@@ -7,14 +7,14 @@
 #   link: '#'
 #   new_window: false
 #   highlight: false
+- name: About
+  link: /about/
+  new_window: false
+  highlight: false
 - name: Partners
   link: /partners/
   new_window: false
   highlight: false
-# - name: About
-#   link: /about/
-#   new_window: false
-#   highlight: false
 - name: Contact
   link: /contact/
   new_window: false
