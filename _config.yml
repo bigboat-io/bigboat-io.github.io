@@ -73,6 +73,11 @@ defaults:
       full_width: true
   -
     scope:
+      path: "pricing.html"
+    values:
+      full_width: true
+  -
+    scope:
       path: "about.html"
     values:
       full_width: true

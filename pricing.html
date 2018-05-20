@@ -1,9 +1,9 @@
 ---
 title: Pricing
-heading: We currently offer a simple subscription model
+heading: Our subscription model
 description: Contact us for more information on our offering.
 pricing_table:
-  - name: Standard
+  - name: Platform
     color: "#4a4a4a"
     features:
       - text: €950,- per month
@@ -25,16 +25,18 @@ pricing_table:
     call_to_action:
       link: /contact/
       text: Contact us
-  - name: Professional
+  - name: Consultancy
     color: "#4a4a4a"
     features:
-      - text: Starting at €1000,- per month
+      - text: Starting at €2000,- per month
         highlight: true
-      - text: Everything from the Standard package
+      - text: Everything from the Platform package
         highlight: false
       - text: Custom integrations with existing systems
         highlight: false
       - text: Consultancy and training
+        highlight: false
+      - text: Provided by one of our <a href="/partners/">implementation partners</a>
         highlight: false
     call_to_action:
       link: /contact/
@@ -69,11 +71,13 @@ addon_table:
       highlight: false
 faq:
   - question: What is included in the default development environment setup?
-    answer: The setup that we currently rollout instantly includes Gitlab, Jenkins, SonarQube, Docker Registry and an example build pipeline that integegrates these services.
+    answer: The default CI/CD setup includes the following preconfigured tools; Gitlab, Jenkins, SonarQube, Docker Registry, Example Application with Tests and an Example continuous delivery pipeline.
   - question: Can I buy additional memory or computing power?
-    answer: Yes, we offer additional cluster nodes starting at €180,- per month.
-  - question: Can I buy additional persisted storage?
-    answer: Yes, we offer additional persisted storage starting at €50,- per month.
+    answer: Yes, we offer additional cluster nodes to extend your environment. See above for pricing.
+  - question: Can I buy additional storage?
+    answer: Yes, we offer additional persisted storage to extend your environment. See above for pricing.
+  - question: Can I integrate my existing cloud or on-premise tools/services?
+    answer: Yes, we offer consultancy through our <a href="/partners/">implementation partners</a>. Contact us for more information.
   - question: Questions?
     answer: Contact us for any further questions at <a href="mailto:info@hyperdev.io?subject=Pricing question">info@hyperdev.io</a>.
 ---
@@ -108,6 +112,7 @@ faq:
 </div>
 
 {% if page.faq %}
+<div style="max-width: 900px; margin-left:auto; margin-right:auto;">
 	<h2>FAQ</h2>
 	<dl class="faq">
 		{% for item in page.faq %}
@@ -117,4 +122,5 @@ faq:
 			</div>
 		{% endfor %}
 	</dl>
+</div>
 {% endif %}
