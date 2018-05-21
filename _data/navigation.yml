@@ -3,12 +3,16 @@
 #   link: '#'
 #   new_window: false
 #   highlight: false
-- name: About
-  link: /about/
-  new_window: false
-  highlight: false
+# - name: About
+#   link: /about/
+#   new_window: false
+#   highlight: false
 - name: Pricing
   link: /pricing/
+  new_window: false
+  highlight: false
+- name: Team
+  link: /team/
   new_window: false
   highlight: false
 - name: Partners

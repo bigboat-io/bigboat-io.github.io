@@ -78,6 +78,11 @@ defaults:
       full_width: true
   -
     scope:
+      path: "team.html"
+    values:
+      full_width: true
+  -
+    scope:
       path: "about.html"
     values:
       full_width: true
