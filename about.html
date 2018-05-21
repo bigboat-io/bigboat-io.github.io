@@ -1,26 +1,93 @@
 ---
-title: Our team
-description: Well done is better than well said.
+title: About HyperDev
+heading: The HyperDev Cloud Proposition
+description: Helping teams move forward!
 ---
-<section>
-<div class="container">
-	<ul class="staff">
-		{% for person in site.staff_members %}
-			<li>
-				<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
-				<div class="name">{{ person.name }}</a></div>
-				<div class="position">{{ person.position }}</div>
-			</li>
-		{% endfor %}
-	</ul>
-</div>
-</section>
 
-<section class="bottom-cta">
-	<h2 class="editable">Get in touch
-		<strong>today!</strong>
-	</h2>
-	<div class="button alt">
-		<a href="/contact/">Contact Us</a>
-	</div>
-</section>
+
+    <div class="content">
+        <section>
+            <div class="container flex">
+                <div class="text editable">
+                    <h2>The State of Software Development</h2>
+                    <p>Today's software teams are confrontend with an ever changing set of requirements, wishes and shifting focus. 
+                        On top of that business demands that new features can be quickly added and put into production without compromising
+                        existing functionality and quality aspects.
+                    </p>
+                </div>
+                <div class="image" style="text-align: center">
+                    <img src="/images/icons8-parliament-96.png" alt="Screenshot" style="width:200px; padding-left: 120px;" />
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container flex">
+                <div class="text editable">
+                    <h2>Continuous Delivery &amp; DevOps</h2>
+                    <p>Often teams are also responsible for maintaining the production or acceptance environment by means of 
+                        CI/CD pipelines. Teams need to not only develop the software, but also have the capabilities to ensure ........ TBD
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="/images/icons8-parliament-96.png" alt="Screenshot" style="width:200px; padding-left: 120px;" />
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container flex">
+                <div class="text editable">
+                    <h2>HyperDev CI/CD</h2>
+                    <p>tools, pipelines
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="/images/icons8-parliament-96.png" alt="Screenshot" style="width:200px; padding-left: 120px;" />
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container flex">
+                <div class="text editable">
+                    <h2>HyperDev Dashboard</h2>
+                    <p>simple one click deployments, friendly api, enablec CI/CD
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="/images/icons8-parliament-96.png" alt="Screenshot" style="width:200px; padding-left: 120px;" />
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container flex">
+                <div class="text editable">
+                    <h2>Build on Docker</h2>
+                    <p>Docker Swarm, etc.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="/images/icons8-parliament-96.png" alt="Screenshot" style="width:200px; padding-left: 120px;" />
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container flex">
+                <div class="text editable">
+                    <h2>Deployed in the Netherlands</h2>
+                    <p>Story about technical deployment, VPN
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="/images/icons8-parliament-96.png" alt="Screenshot" style="width:200px; padding-left: 120px;" />
+                </div>
+            </div>
+        </section>
+    
+        <section class="bottom-cta">
+            <h2 class="editable">Get in touch
+                <strong>today!</strong>
+            </h2>
+            <div class="button alt">
+                <a href="/contact/">Contact Us</a>
+            </div>
+        </section>
+    </div>
