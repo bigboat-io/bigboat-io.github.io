@@ -42,7 +42,7 @@ pricing_table:
       link: /contact/
       text: Contact us
 addon_table:
-  - name: 'Extra Cluster Node'
+  - name: 'Extra Cluster Resources'
     color: "#4a4a4a"
     features:
       - text: €280,- per month
@@ -51,7 +51,7 @@ addon_table:
         highlight: false
       - text: Extra compute resources for the HyperDev cluster
         highlight: false
-  - name: Extra Persistent Storage
+  - name: Extra Persisted Storage
     color: "#4a4a4a"
     features:
       - text: €55,- per month
@@ -76,7 +76,7 @@ addon_table:
       highlight: true
     - text: Access for 10 extra users
       highlight: false
-    - text: Dedicated build node for Jenkins
+    - text: 
       highlight: false
 faq:
   - question: What is included in the default development environment setup?
@@ -87,6 +87,8 @@ faq:
     answer: Yes, we offer additional persisted storage to extend your environment. See above for pricing.
   - question: Can I integrate my existing cloud or on-premise tools/services?
     answer: Yes, we offer consultancy through our <a href="/partners/">implementation partners</a>. Contact us for more information.
+  - question: Can I add additional user accounts?
+    answer: Yes, the default package includes up to 10 user accounts. Extra users can be added to your environment. See above for pricing.
   - question: Questions?
     answer: Contact us for any further questions at <a href="mailto:info@hyperdev.io?subject=Pricing question">info@hyperdev.io</a>.
 ---
@@ -109,7 +111,7 @@ faq:
 <p class="subtext">HyperDev Addons</p>
 <div class="plans" style="max-width: 900px; margin-left:auto; margin-right:auto;">
   {% for plan in page.addon_table %}
-  <ul class="plan">
+  <ul class="plan" style="min-width:300px">
     <li style="background: {{ plan.color }}">
       <h3>{{ plan.name }}</h3>
     </li>
