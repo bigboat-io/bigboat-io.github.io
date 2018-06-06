@@ -88,7 +88,7 @@ defaults:
       full_width: true
   -
     scope:
-      path: "about.html"
+      path: "product.html"
     values:
       full_width: true
 
