@@ -1,28 +1,13 @@
 - links:
-  # - name: Pricing
-  #   link: /pricing/
-  # - name: Blog
-  #   ink: /blog/
-  #   link: '#'
-  - name: About
-    link: /about/
+  - name: Product
+    link: /product/
+  - name: Pricing
+    link: /pricing/
   - name: Partners
     link: /partners/
   - name: Contact
     link: /contact/
-# - links:
-#   - name: Login
-#     link: /
-#     new_window: true
-#   - name: Sign Up
-#     link: /
-#     new_window: true
-#   - name: Docs
-#     link: /
-#     new_window: true
-#   - name: Status
-#     link: /
-#     new_window: true
+
 - links:
   - name: Github
     link: https://github.com/hyperdev-io

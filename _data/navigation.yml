@@ -7,6 +7,10 @@
 #   link: /about/
 #   new_window: false
 #   highlight: false
+- name: Product
+  link: /product/
+  new_window: false
+  highlight: false
 - name: Pricing
   link: /pricing/
   new_window: false
