@@ -10,50 +10,51 @@ pricing_table:
         description: |
           The HyperDev Dashboard exposes a Graphical User Interface and API for managing application definitions (docker-compose+),
           services (Docker Stacks) and storage (buckets). The dashboard is aimed at software engineers and QA (testing + reporting).
-          Therefor it is easy to use and supports all CI/CD preconditions.
+          Consequently, it is easy to use and supports all CI/CD preconditions.
       - text: Compute Cluster
         description: |
           The compute cluster is a Docker Swarm. You will get your own cluster of multiple nodes with a total of <strong>48GB memory and 12 processing
-          cores</strong>. It is used for running your CI/CD services such as Jenkins, SonarQube, Docker Registry, as well as your own applications.
+          cores</strong>. It is used for running all CI/CD services such as Jenkins, SonarQube, Docker Registry, as well as your own applications.
           It is backed by the Persisted Storage. Because of this setup, it is easy to extend the cluster with extra memory and cores.
-          By using smart memory limits, applications can safely run next to each other.
+          Applications can safely run next to each other, using smart memory limits.
       - text: Dedicated Jenkins Build Server
-        description: | 
+        description: |
           In order to build software and make use of Jenkins CI pipelines, it is essential to have a dedicated build
-          server. You will get full access to this build server (through SSH) and be able to run any build scenario. The build server
+          server. You will get full access to this build server (via SSH) and be able to run any build scenario. The build server
           has <strong>4GB of memory and will run on 2 cores</strong>. The operating system we use is CentOS 7.
       - text: Persisted Storage
         description: |
-          The persisted storage will store all data buckets for HyperDev and initially has a <strong>capacity of 200GB</strong>. One can, of course,
-          always purchase more. The persisted storage runs NFS on LVM so it is easy to scale-up the storage without any downtime. In
-          order to keep control over the data created through the CI/CD pipelines, the platform will periodically run cleanup scripts.
+          The persisted storage will store all data buckets for HyperDev and has initial <strong>capacity of 200GB</strong>. One can, of course,
+          always purchase more. The persisted storage runs NFS on LVM so it is easy to scale up the storage without any downtime. In
+          order to keep control of the data created through the CI/CD pipelines, the platform will periodically run cleanup scripts.
       - text: Secure VPN
         description: |
           Security is an essential part of any platform. That is why we configure and run an <strong>OpenVPN server</strong> to allow you to connect
-          to services running on HyperDev. Users can run an OpenVPN client to connect and make sure your data remains safe.
+          to services running on HyperDev. Users can run an OpenVPN client to connect and make sure their data remains safe.
       - text: Development Environment
         description: |
-          The development environment consists of the HyperDev Dashboard and the Compute Cluster. Together they create what we like
-          to call a 'Continuous destroyment' setup. This allows users to create new instances of different versions of the application
-          you are developing as throw-aways. It's as easy as start (an instance) -> check (run tests against it) -> stop (free up resources).
-          No more dedicated Development or Test environments with miss-matching configurations and expensive IT-experts necessary.
+          The development environment consists of the <strong>HyperDev Dashboard</strong> and the <strong>Compute Cluster</strong>.
+          Together they create what we like to call a 'Continuous destroyment' setup. This allows users to create new instances of different
+          versions of the application you are developing as throw-aways.
+          It's as easy as <strong>start (an instance) -> check (run tests against it) -> stop (free up resources)</strong>.
+          No more dedicated Development and Test environments with mismatching configurations, maintained by expensive IT experts.
           Leverage the potential of containerization in your development process!
       - text: CI/CD Environment
         description: |
-          In order to actually have proper CI/CD pipelines, you need the right tools. All the tools you'd need to run our example
+          In order to actually have proper CI/CD pipelines, you need the right tools. All the tools required to run our example
           application and setup will be provided to you - no more struggling for weeks until everything is connected! Start delivering
           customer value from day one!
       - text: Backup
         description: |
-          All data in the persisted storage is backed up <strong>every 4 hours</strong> for at least 2 days and there is a weekly backup available for
-          up to 5 weeks. Data can be recovered at your request.
+          All data in the persisted storage is backed up <strong>every 4 hours</strong> and is kept at least 2 days.
+          There is also a weekly backup available for up to 5 weeks. Data can be recovered at your request.
       - text: User Accounts
         description: |
           You will get access to the platform (VPN and LDAP accounts) for <strong>up to 10 users</strong>. You have a big project and need more users?
           No worries, more user accounts can be purchased at any time.
       - text: Technical support
         description: |
-          The HyperDev team is ready to help you with technical issues. We have a service desk that is available during office hours
+          The HyperDev team is ready to help you with all technical issues. We have a service desk that is available during office hours
           <strong>(8:00 - 20:00)</strong> for platform related questions and incidents.
 
     call_to_action:
@@ -110,7 +111,7 @@ addon_table:
       highlight: true
     - text: Access for 10 extra users
       highlight: false
-    - text: 
+    - text:
       highlight: false
 faq:
   - question: What is included in the default development environment setup?
@@ -133,7 +134,7 @@ faq:
         <li style="background: #003A61;">
           <h3>{{ plan.name }}</h3>
         </li>
-      </ul> 
+      </ul>
       <h3 style="padding:10px;">{{ plan.price }}</h3>
       {% for feature in plan.features %}
       <section class="price-cards card">
@@ -147,7 +148,7 @@ faq:
       {% endfor %}
     </div>
   {% endfor %}
-	
+
 </div>
 <p class="subtext">HyperDev Addons</p>
 <div class="plans" style="max-width: 900px; margin-left:auto; margin-right:auto;">
